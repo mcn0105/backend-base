@@ -1,11 +1,9 @@
-pipeline{
-
+pipeline {
     agent any
-
     stages{
-        ('etapa 1') {
+        stage('etapa 1'){
             steps{
-                echo 'Hola Mundo'
+                echo 'Hola Mundo desde consola de jenkins'
                 sh 'echo "Hola Mundo desde el terminal"'
             }
         }
